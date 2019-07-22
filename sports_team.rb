@@ -23,8 +23,12 @@ class SportsTeam
 #   @coach_name = name
 # end
 
-def add_player(name)
-  @players << name
-end
+  def add_player(name)
+    @players << name
+  end
+
+  def check_player_name(player)
+    return @players.include?(player)
+  end
 
 end

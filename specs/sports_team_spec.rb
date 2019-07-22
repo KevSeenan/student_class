@@ -30,4 +30,12 @@ class TestSportsTeam < MiniTest::Test
     assert_equal(["Mustrum Ridcully", "The Librarian", "Rincewind", "Trevor Likely"], @sports_team.players)
   end
 
+  def test_check_player_name__true()
+    assert_equal(true, @sports_team.check_player_name("Mustrum Ridcully"))
+  end
+
+  def test_check_player_name__false()
+    assert_equal(false, @sports_team.check_player_name("Samuel Vimes"))
+  end
+
 end
