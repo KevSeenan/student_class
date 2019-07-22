@@ -5,7 +5,7 @@ require_relative('../sports_team.rb')
 class TestSportsTeam < MiniTest::Test
 
   def setup()
-    @sports_team = SportsTeam.new("Unseen Academicals FC", ["Mustrum Ridcully", "The Librarian", "Rincewind"], "Ponder Stibbons")
+    @sports_team = SportsTeam.new("Unseen Academicals FC", ["Mustrum Ridcully", "The Librarian", "Rincewind"], "Ponder Stibbons", 0)
   end
 
   def test_team_name()
@@ -36,6 +36,11 @@ class TestSportsTeam < MiniTest::Test
 
   def test_check_player_name__false()
     assert_equal(false, @sports_team.check_player_name("Samuel Vimes"))
+  end
+
+  def test_team_points()
+
+    assert_equal(0, @sports_team.team_points)
   end
 
 end
