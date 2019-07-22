@@ -32,4 +32,14 @@ class SportsTeam
     return @players.include?(player)
   end
 
+  def team_result(result)
+    if(result == "won") then @team_points += 3
+
+    elsif(result == "draw") then @team_points += 1
+
+    else @team_points += 0
+
+    end
+  end
+
 end
