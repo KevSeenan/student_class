@@ -23,4 +23,8 @@ class SportsTeam
 #   @coach_name = name
 # end
 
+def add_player(name)
+  @players << name
+end
+
 end
