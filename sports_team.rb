@@ -17,4 +17,8 @@ class SportsTeam
   def coach_name()
     return @coach_name
   end
+def set_coach_name(name)
+  @coach_name = name
+end
+
 end
